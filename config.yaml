@@ -1,0 +1,148 @@
+baseURL: "https://ibrunotome.github.io"
+title: "Bruno Tomé"
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+disqusShortname: ibrunotome
+
+languageCode: pt
+defaultContentLanguage: pt
+languages:
+  pt:
+    contentDir: content/pt
+    languageName: Português
+    weight: 10
+    homeInfoParams:
+      Title: "Olá \U0001F44B"
+      Content: Bem vindo ao meu blog
+    menu:
+      main:
+        - identifier: categorias
+          name: categorias
+          url: /categories/
+          weight: 10
+        - identifier: tags
+          name: tags
+          url: /tags/
+          weight: 20
+        - identifier: sobre
+          name: sobre
+          url: /sobre/
+          weight: 30
+  en:
+    contentDir: content/en
+    languageName: English
+    weight: 20
+    homeInfoParams:
+      Title: "Hi there \U0001F44B"
+      Content: Welcome to my blog
+    menu:
+      main:
+        - identifier: categories
+          name: categories
+          url: https://ibrunotome.github.io/categories/
+          weight: 10
+        - identifier: tags
+          name: tags
+          url: https://ibrunotome.github.io/tags/
+          weight: 20
+        - identifier: about
+          name: about
+          url: /about/
+          weight: 30
+    
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: "Bruno Tomé"
+  description: "Bem vindo ao meu blog"
+  author: "Bruno Tomé"
+  # images: ["<link or path of image for opengraph, twitter-cards>"]
+  # author: ["Me", "You"] # multiple authors
+
+  defaultTheme: dark # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: false
+  ShowShareButtons: false
+  disableSpecial1stPost: false
+  displayFullLangName: true
+  comments: true
+  hidemeta: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "https://ibrunotome.github.io/favicon.ico"
+    favicon16x16: "https://ibrunotome.github.io/favicon-16x16.ico"
+    favicon32x32: "https://ibrunotome.github.io/favicon-32x32.ico"
+    apple_touch_icon: "https://ibrunotome.github.io/apple-touch-icon.png"
+    safari_pinned_tab: "https://ibrunotome.github.io/safari-pinned-tab.svg"
+
+  label:
+    text: "Bruno Tomé"
+    # icon: /apple-touch-icon.png
+    # iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: "Bruno Tomé"
+    subtitle: "Sócio desenvolvedor de alguns e-commerces"
+    imageUrl: "https://avatars.githubusercontent.com/u/4256471?s=460&u=ab7ff920fbf6814189985254c91bb82cd2549792&v=4"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/ibrunotome"
+    - name: stackoverflow
+      url: "https://stackoverflow.com/users/3238672/bruno-tomé?tab=profile"
+    - name: linkedin
+      url: "https://github.com/ibrunotome"
+    - name: twitter
+      url: "https://twitter.com/ibrunotome"
+
+  analytics:
+    google:
+      SiteVerificationTag: "UA-40327355-1"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  # fuseOpts:
+  #   isCaseSensitive: false
+  #   shouldSort: true
+  #   location: 0
+  #   distance: 1000
+  #   threshold: 0.4
+  #   minMatchCharLength: 0
+  #   keys: ["title", "permalink", "summary", "content"]
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
